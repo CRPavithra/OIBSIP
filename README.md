@@ -1,91 +1,152 @@
-<<<<<<< HEAD
-# OIBSIP
-Python Chat Application
+Chat Application 
+OASIS INFOBYTE – Python Programming Internship | Task 5
 
-OASIS INFOBYTE Internship  Python Programming | Task 5
+A real-time desktop-based messaging application developed using Python, Tkinter GUI, socket programming, and multithreading. The system enables multiple users to connect to a centralized server and exchange messages through an interactive graphical interface.
 
-Project Objective
+Project Overview
 
-To develop a real-time desktop chat application using Python that allows multiple users to communicate through a graphical user interface.
+The Real-Time Desktop Chat Application is designed to facilitate communication between multiple users over a network.
+It follows a client-server architecture in which the server manages client connections and message distribution, while individual clients provide an interactive interface for sending and receiving messages.
+The application uses multithreading to handle multiple client connections and support simultaneous message communication without blocking the graphical user interface.
 
-Project Description
+Key Features
 
-A real-time desktop chat application developed using Python Tkinter GUI, Socket Programming, and Multithreading. It enables multiple users to connect to a central server and exchange messages instantly.
+- Real-Time Messaging: Enables instant message exchange between connected users.
+- Multi-Client Support: Allows multiple clients to connect to a centralized server.
+- Graphical User Interface: Provides an interactive desktop interface using Tkinter.
+- Socket-Based Communication: Implements network communication using Python sockets.
+- Multithreading: Handles simultaneous client connections and message processing.
+- User Identification: Supports username-based client login.
+- Online User Tracking: Displays currently connected users.
+- Message Timestamps: Displays timestamps alongside chat messages.
+- Connection Notifications: Provides notifications when users join or leave the chat.
+- Client-Server Architecture: Separates communication management from the user interface.
 
-Features
+Technology Stack
 
-- User login with username
-- Real-time messaging
-- Multiple client connections
-- Online users list
-- Message timestamps
-- Join and leave notifications
-- Duplicate username prevention
-- Simple and user-friendly graphical interface
+Technology| Purpose
+Python| Core application development
+Tkinter| Graphical user interface
+Socket Programming| Network communication
+Threading| Concurrent client handling
+TCP/IP| Reliable network communication
+Git & GitHub| Version control and project management
 
-Technologies Used
+System Architecture
 
-- Python
-- Tkinter
-- Socket Programming
-- Threading
-- JSON
+             CHAT SERVER
+                  |
+       Client Connection Management
+                  |
+          Message Distribution
+                  |
+       -----------------------
+       |          |          |
+       v          v          v
+    Client 1   Client 2   Client 3
+       |          |          |
+       v          v          v
+    Tkinter    Tkinter    Tkinter
+       GUI        GUI        GUI
 
 Project Structure
 
-Python-Task5-ChatApplication/
+Task3-ChatApplication/
 │
-├── server.py
-├── client.py
-├── README.md
-└── screenshots/
+├── client.py       # Client-side application
+├── server.py       # Server-side communication
+├── README.md       # Project documentation
+│
+└── screenshots/    # Application screenshots
 
-How to Run
+Installation and Execution
 
-1. Clone the repository.
-
-2. Open the project folder in VS Code.
-
-3. Start the server:
-   
-   "python server.py"
-
-4. Open another terminal.
-
-5. Start a client:
-   
-   "python client.py"
-
-6. Enter your username.
-
-7. Open additional clients to chat with other users.
-
-Requirements
+Prerequisites
 
 - Python 3.x
-- Tkinter (included with many standard Python installations)
+- Visual Studio Code or any Python-supported IDE
+- Basic understanding of networking concepts
 
-No external Python packages are required.
+1. Clone the Repository
 
-Screenshots
+git clone YOUR_REPOSITORY_URL
 
-Screenshots of the application, including the login window, connected users, and message exchange, are available in the "screenshots" folder.
+2. Navigate to the Project Directory
+
+cd Task3-ChatApplication
+
+3. Start the Server
+
+Open the first terminal and execute:
+
+python server.py
+
+4. Launch the Client
+
+Open another terminal and execute:
+
+python client.py
+
+5. Connect Multiple Clients
+
+- Launch "client.py" in multiple terminals or instances.
+- Enter a username when prompted.
+- Connect to the running server.
+- Start exchanging messages in real time.
+
+Working Methodology
+
+1. The server initializes and listens for incoming client connections.
+2. Clients establish connections with the server using TCP sockets.
+3. Users enter their usernames to identify themselves.
+4. The server manages connected clients using multithreading.
+5. Messages sent by one client are distributed to other connected clients.
+6. The graphical interface displays incoming messages with timestamps.
+7. Join and leave notifications update users about connection changes.
+
+Learning Outcomes
+
+This project provided practical experience in:
+
+- Python network programming.
+- Client-server communication architecture.
+- TCP socket implementation.
+- Concurrent programming using multithreading.
+- Desktop GUI development using Tkinter.
+- Managing multiple client connections.
+- Real-time message broadcasting.
+- Network communication and exception handling.
+
+Future Enhancements
+
+- Private one-to-one messaging.
+- User authentication and account management.
+- Message encryption for secure communication.
+- File and media sharing.
+- Chat history storage.
+- Improved interface with customizable themes.
+
+Project Information
+
+Attribute| Details
+Organization| OASIS INFOBYTE
+Internship Domain| Python Programming
+Task| Task 5
+Project Type| Desktop Application
+Programming Language| Python
+Architecture| Client-Server
 
 Author
+CR Pavithra
+Artificial Intelligence and Machine Learning
+Developed as part of the OASIS INFOBYTE Python Programming Internship.
 
-Pavithra CR
-
-OASIS INFOBYTE – Python Programming Internship
-
- Weather Application
-
+Weather Application
 OASIS INFOBYTE – Python Programming Internship | Task 2
 
 A Python-based weather application that retrieves and presents real-time weather information for user-specified locations using the OpenWeatherMap API. The application provides essential weather parameters through a simple and intuitive user interface.
 
----
-
-📌 Project Overview
+Project Overview
 
 The Weather Application is designed to provide users with quick access to current weather conditions by entering a city name. It integrates with the OpenWeatherMap REST API to fetch live weather data and processes the API response to display meaningful weather information.
 
@@ -102,7 +163,7 @@ The project demonstrates practical implementation of Python programming, API int
 - Error Handling: Manage invalid city names, network failures, and API errors.
 - User-Friendly Interface: Provide a simple and accessible user experience.
 
-🛠️ Technology Stack
+Technology Stack
 
 Technology| Purpose
 Python| Core application development
@@ -110,7 +171,7 @@ Requests| HTTP requests and API communication
 OpenWeatherMap API| Real-time weather data
 JSON| Processing API responses
 
-📂 Project Structure
+Project Structure
 
 Python-Task2-WeatherApp/
 │
@@ -233,7 +294,7 @@ Set the environment variable before running the application. Never commit API ke
 
 python weather.py
 
-📊 Weather Parameters
+Weather Parameters
 
 The application retrieves and displays the following information:
 
@@ -245,13 +306,13 @@ Description| Detailed weather description
 Humidity| Relative humidity (%)
 Wind Speed| Wind speed (m/s)
 
-🔗 API Reference
+API Reference
 
 OpenWeatherMap – Current Weather Data API
 
 "https://openweathermap.org/current" (https://openweathermap.org/current)
 
-🎯 Learning Outcomes
+Learning Outcomes
 
 Through this project, I gained practical experience in:
 
@@ -262,21 +323,99 @@ Through this project, I gained practical experience in:
 - Implementing exception handling and error management.
 - Managing API credentials securely.
 
-👩‍💻 Internship Details
+Internship Details
 
 Organization: OASIS INFOBYTE
 Internship Domain: Python Programming
 Task Number: Task 2
 Project: Weather Application
 
-👤 Author
-
+Author
 CR Pavithra
-
 Python Programming | Artificial Intelligence & Machine Learning
 
+AI-Powered Voice Assistant
+OASIS INFOBYTE – Python Programming Internship | Task 1
 
-=======
+An interactive, Python-based voice assistant that enables hands-free human-computer interaction through speech recognition and voice synthesis. The application captures spoken commands, interprets user instructions, executes supported operations, and delivers audio responses.
+
+Overview
+
+The AI-Powered Voice Assistant is developed to simplify computer interaction through voice-based communication. It integrates speech recognition and text-to-speech technologies to establish an interactive communication system between users and computers.
+
+The application follows a modular architecture that separates voice input processing, command execution, configuration management, and audio response generation.
+
+Core Features
+
+- Speech Recognition: Captures voice input through a microphone and converts speech into text.
+- Voice Response Generation: Converts text responses into natural speech using a text-to-speech engine.
+- Command Interpretation: Processes recognized instructions and identifies supported operations.
+- Automated Task Execution: Performs predefined actions based on user commands.
+- Interactive Communication: Supports continuous voice-based interaction.
+- Error Management: Handles speech recognition failures and invalid inputs.
+- Modular Design: Organizes application components into separate Python modules.
+
+Technology Stack
+
+Component| Technology
+Programming Language| Python
+Speech Recognition| SpeechRecognition
+Audio Input| PyAudio
+Speech Synthesis| pyttsx3
+Development Environment| Visual Studio Code
+Version Control| Git & GitHub
+
+System Architecture
+
+       User Voice Input
+              |
+              v
+       Microphone Input
+              |
+              v
+       Speech Recognition
+              |
+              v
+       Command Processing
+              |
+              v
+       Command Execution
+              |
+              v
+       Response Generation
+              |
+              v
+       Text-to-Speech Engine
+              |
+              v
+       Audio Response
+
+Project Structure
+
+Python-Task1-VoiceAssistant/
+│
+├── assistant.py       # Main application entry point
+├── commands.py        # Voice command processing
+├── config.py          # Application configuration
+├── requirements.txt   # Project dependencies
+├── README.md          # Project documentation
+│
+└── screenshots/       # Application screenshots
+
+Installation & Execution
+
+Prerequisites
+
+- Python 3.13 or a compatible version
+- Working microphone
+- Internet connection for online speech recognition
+
+1. Clone the Repository
+
+git clone YOUR_REPOSITORY_URL
+
+2. Navigate to the Project Directory
+
 cd Python-Task1-VoiceAssistant
 
 3. Create a Virtual Environment
@@ -336,12 +475,7 @@ Task Number| Task 1
 Language| Python
 
 Author
-
-Pavithra CR
+CR Pavithra
 
 Artificial Intelligence and Machine Learning
-
----
-
 Developed as part of the OASIS INFOBYTE Python Programming Internship.
->>>>>>> 830addc (AI Powered Voice Assistant)
