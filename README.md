@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OIBSIP
 Python Chat Application
 
@@ -120,6 +121,86 @@ Python-Task2-WeatherApp/
     └── weather-app.png
 
 ⚙️ Installation and Execution
+=======
+AI-Powered Voice Assistant
+
+Intelligent Voice Interaction System | Task 1
+
+An interactive, Python-based voice assistant that enables hands-free human-computer interaction through speech recognition and voice synthesis. The application captures spoken commands, interprets user instructions, executes supported operations, and delivers audio responses.
+
+---
+
+Overview
+
+The AI-Powered Voice Assistant is developed to simplify computer interaction through voice-based communication. It integrates speech recognition and text-to-speech technologies to establish an interactive communication system between users and computers.
+
+The application follows a modular architecture that separates voice input processing, command execution, configuration management, and audio response generation.
+
+Core Features
+
+- Speech Recognition: Captures voice input through a microphone and converts speech into text.
+- Voice Response Generation: Converts text responses into natural speech using a text-to-speech engine.
+- Command Interpretation: Processes recognized instructions and identifies supported operations.
+- Automated Task Execution: Performs predefined actions based on user commands.
+- Interactive Communication: Supports continuous voice-based interaction.
+- Error Management: Handles speech recognition failures and invalid inputs.
+- Modular Design: Organizes application components into separate Python modules.
+
+Technology Stack
+
+Component| Technology
+Programming Language| Python
+Speech Recognition| SpeechRecognition
+Audio Input| PyAudio
+Speech Synthesis| pyttsx3
+Development Environment| Visual Studio Code
+Version Control| Git & GitHub
+
+System Architecture
+
+       User Voice Input
+              |
+              v
+       Microphone Input
+              |
+              v
+       Speech Recognition
+              |
+              v
+       Command Processing
+              |
+              v
+       Command Execution
+              |
+              v
+       Response Generation
+              |
+              v
+       Text-to-Speech Engine
+              |
+              v
+       Audio Response
+
+Project Structure
+
+Python-Task1-VoiceAssistant/
+│
+├── assistant.py       # Main application entry point
+├── commands.py        # Voice command processing
+├── config.py          # Application configuration
+├── requirements.txt   # Project dependencies
+├── README.md          # Project documentation
+│
+└── screenshots/       # Application screenshots
+
+Installation & Execution
+
+Prerequisites
+
+- Python 3.13 or a compatible version
+- Working microphone
+- Internet connection for online speech recognition
+>>>>>>> 830addc (AI Powered Voice Assistant)
 
 1. Clone the Repository
 
@@ -127,6 +208,7 @@ git clone YOUR_REPOSITORY_URL
 
 2. Navigate to the Project Directory
 
+<<<<<<< HEAD
 cd Python-Task2-WeatherApp
 
 3. Install Dependencies
@@ -194,3 +276,72 @@ CR Pavithra
 Python Programming | Artificial Intelligence & Machine Learning
 
 
+=======
+cd Python-Task1-VoiceAssistant
+
+3. Create a Virtual Environment
+
+python -m venv venv
+
+4. Activate the Environment
+
+Windows:
+
+venv\Scripts\activate
+
+5. Install Dependencies
+
+pip install -r requirements.txt
+
+6. Launch the Application
+
+python assistant.py
+
+Implementation Highlights
+
+- Microphone-based audio input acquisition.
+- Speech-to-text conversion for interpreting spoken instructions.
+- Conditional command processing and execution.
+- Audio response generation using speech synthesis.
+- Modular separation of application responsibilities.
+- Exception handling for reliable interaction.
+
+Learning Outcomes
+
+This project provided practical exposure to:
+
+- Python-based application development.
+- Speech recognition and audio processing.
+- Text-to-speech integration.
+- Voice-controlled automation.
+- Modular software architecture.
+- Debugging and exception handling.
+- Working with external Python libraries.
+
+Future Enhancements
+
+- Integration of advanced conversational AI.
+- Context-aware voice interactions.
+- Expanded system automation capabilities.
+- Improved speech recognition accuracy.
+- Graphical user interface integration.
+
+Project Information
+
+Attribute| Details
+Organization| OASIS INFOBYTE
+Internship Domain| Python Programming
+Project| AI-Powered Voice Assistant
+Task Number| Task 1
+Language| Python
+
+Author
+
+Pavithra CR
+
+Artificial Intelligence and Machine Learning
+
+---
+
+Developed as part of the OASIS INFOBYTE Python Programming Internship.
+>>>>>>> 830addc (AI Powered Voice Assistant)
