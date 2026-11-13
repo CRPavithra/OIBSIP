@@ -141,6 +141,7 @@ CR Pavithra
 Artificial Intelligence and Machine Learning
 Developed as part of the OASIS INFOBYTE Python Programming Internship.
 
+
 Weather Application
 OASIS INFOBYTE – Python Programming Internship | Task 2
 
@@ -333,6 +334,7 @@ Project: Weather Application
 Author
 CR Pavithra
 Python Programming | Artificial Intelligence & Machine Learning
+
 
 AI-Powered Voice Assistant
 OASIS INFOBYTE – Python Programming Internship | Task 1
