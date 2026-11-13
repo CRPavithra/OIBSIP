@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # OIBSIP
 Python Chat Application
@@ -79,7 +78,7 @@ Pavithra CR
 Internship
 
 OASIS INFOBYTE – Python Programming Internship
-=======
+
 🌦️ Weather Application
 
 OASIS INFOBYTE – Python Programming Internship | Task 2
@@ -200,4 +199,4 @@ Python Programming | Artificial Intelligence & Machine Learning
 ---
 
 Developed as part of the OASIS INFOBYTE Python Programming Internship.
->>>>>>> bb2af58 (Real time weather forecasting appliucation using python)
+
